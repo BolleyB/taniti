@@ -30,12 +30,10 @@ body {
   overflow-x: hidden;
 }
 
-/* ── PAGES ── */
 .page { display: none; }
 .page.active { display: block; animation: pageIn .4s ease both; }
 @keyframes pageIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 
-/* ── NAV ── */
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   background: rgba(6,61,79,.96);
@@ -76,7 +74,7 @@ nav {
 }
 .nav-search:hover { background: rgba(255,255,255,.12); color: rgba(255,255,255,.9); }
 
-/* ── HERO ── */
+
 .hero {
   height: 100vh; min-height: 600px;
   background: linear-gradient(160deg, #063D4F 0%, #0A6E8A 45%, #1a9a7a 100%);
@@ -125,7 +123,7 @@ nav {
 .btn-ghost { background: rgba(255,255,255,.12); color: #fff; border: 1px solid rgba(255,255,255,.3); }
 .btn-ghost:hover { background: rgba(255,255,255,.2); }
 
-/* ── HIGHLIGHTS STRIP ── */
+
 .highlights {
   display: grid; grid-template-columns: repeat(3,1fr);
   gap: 0; background: var(--deep); padding: 0;
@@ -141,7 +139,7 @@ nav {
 .highlight-label { font-size: .72rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--sand); margin-bottom: 6px; }
 .highlight-val { font-family: 'Playfair Display', serif; font-size: 1.6rem; color: #fff; }
 
-/* ── SECTIONS ── */
+
 .section { padding: 88px 48px; }
 .section.alt { background: var(--deep); }
 .section-eyebrow { font-size: .7rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--ocean); margin-bottom: 12px; }
@@ -155,7 +153,7 @@ nav {
 .section-body { font-size: 1rem; line-height: 1.75; color: var(--muted); max-width: 660px; }
 .section.alt .section-body { color: rgba(255,255,255,.65); }
 
-/* ── CARD GRID ── */
+
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 24px; margin-top: 48px; }
 .card {
   background: #fff; border-radius: 16px;
@@ -181,7 +179,7 @@ nav {
 }
 .card-btn:hover { gap: 10px; color: var(--coral); }
 
-/* ── PAGE HERO (inner pages) ── */
+
 .page-hero {
   padding: 140px 48px 80px;
   background: linear-gradient(135deg, var(--deep) 0%, var(--ocean) 100%);
@@ -197,12 +195,12 @@ nav {
 .page-hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem,5vw,4rem); font-weight: 900; color: #fff; line-height: 1.1; margin-bottom: 16px; }
 .page-hero-sub { font-size: 1rem; color: rgba(255,255,255,.7); max-width: 560px; line-height: 1.7; }
 
-/* ── BREADCRUMB ── */
+
 .breadcrumb { padding: 16px 48px; background: #fff; border-bottom: 1px solid rgba(0,0,0,.06); font-size: .8rem; color: var(--muted); display: flex; gap: 8px; align-items: center; }
 .breadcrumb a { color: var(--ocean); cursor: pointer; text-decoration: none; }
 .breadcrumb a:hover { text-decoration: underline; }
 
-/* ── ACTIVITY GRID ── */
+
 .activity-filter { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
 .filter-btn {
   padding: 8px 18px; border-radius: 20px; border: 1.5px solid var(--ocean);
@@ -211,7 +209,6 @@ nav {
 }
 .filter-btn:hover, .filter-btn.active { background: var(--ocean); color: #fff; }
 
-/* ── LODGING TABLE ── */
 .lodge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); gap: 20px; margin-top: 32px; }
 .lodge-card {
   background: #fff; border-radius: 14px; padding: 24px;
@@ -219,6 +216,7 @@ nav {
   box-shadow: 0 2px 12px rgba(0,0,0,.05);
   transition: transform .2s, box-shadow .2s;
 }
+
 .lodge-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,.1); }
 .lodge-stars { color: var(--sunrise); font-size: 1rem; margin-bottom: 10px; }
 .lodge-name { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; margin-bottom: 6px; color: var(--dark); }
@@ -228,7 +226,7 @@ nav {
 .lodge-price span { font-size: .78rem; font-weight: 400; color: var(--muted); }
 .gov-badge { margin-top: 10px; font-size: .72rem; color: var(--palm); display: flex; align-items: center; gap: 4px; }
 
-/* ── DINING ── */
+  
 .dining-section { margin-bottom: 40px; }
 .dining-section h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; margin-bottom: 16px; color: var(--dark); border-left: 4px solid var(--coral); padding-left: 16px; }
 .restaurant-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap: 16px; }
@@ -242,7 +240,7 @@ nav {
 .r-cuisine { font-size: .75rem; color: var(--ocean); font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 8px; }
 .r-desc { font-size: .83rem; color: var(--muted); line-height: 1.55; }
 
-/* ── INFO BOXES ── */
+
 .info-box {
   background: #fff; border-radius: 14px; padding: 24px 28px;
   border-left: 4px solid var(--ocean);
@@ -252,7 +250,7 @@ nav {
 .info-box p { font-size: .9rem; line-height: 1.65; color: var(--muted); }
 .info-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 16px; margin-top: 32px; }
 
-/* ── TRANSPORT ── */
+
 .transport-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 16px; margin-top: 32px; }
 .transport-card {
   background: #fff; border-radius: 12px; padding: 22px;
@@ -264,7 +262,7 @@ nav {
 .t-name { font-weight: 700; font-size: .95rem; margin-bottom: 6px; }
 .t-desc { font-size: .82rem; color: var(--muted); line-height: 1.55; }
 
-/* ── ABOUT / FAQ ── */
+
 .faq-item {
   background: #fff; border-radius: 12px; margin-bottom: 12px;
   border: 1px solid rgba(0,0,0,.07); overflow: hidden;
@@ -281,20 +279,19 @@ nav {
 .faq-a { padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; font-size: .87rem; line-height: 1.7; color: var(--muted); }
 .faq-a.open { max-height: 200px; padding: 0 22px 18px; }
 
-/* ── TWO-COL ── */
+
 .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .two-col.flip { direction: rtl; }
 .two-col.flip > * { direction: ltr; }
 @media(max-width: 768px) { .two-col, .two-col.flip { grid-template-columns: 1fr; } }
 
-/* ── VISUAL PANEL ── */
+
 .visual-panel {
   border-radius: 20px; overflow: hidden; height: 360px;
   display: flex; align-items: center; justify-content: center;
   font-size: 6rem; position: relative;
 }
 
-/* ── CTA STRIP ── */
 .cta-strip {
   background: linear-gradient(135deg, var(--coral) 0%, var(--sunrise) 100%);
   padding: 72px 48px; text-align: center;
@@ -304,7 +301,6 @@ nav {
 .btn-white { background: #fff; color: var(--coral); font-weight: 700; }
 .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
 
-/* ── FOOTER ── */
 footer {
   background: var(--dark); padding: 56px 48px 32px;
   display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 40px;
@@ -326,7 +322,7 @@ footer {
 .footer-bottom { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.08); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
 .footer-bottom span { font-size: .78rem; color: rgba(255,255,255,.3); }
 
-/* ── TOAST ── */
+
 #toast {
   position: fixed; bottom: 32px; right: 32px;
   background: var(--deep); color: #fff;
@@ -340,7 +336,7 @@ footer {
 }
 #toast.show { opacity: 1; transform: translateY(0); }
 
-/* Mobile nav */
+
 @media(max-width: 700px) {
   nav { padding: 0 20px; }
   .nav-links a { padding: 6px 10px; font-size: .72rem; }
@@ -353,7 +349,7 @@ footer {
 </head>
 <body>
 
-<!-- ════════════════════ NAV ════════════════════ -->
+
 <nav>
   <div class="nav-brand" onclick="showPage('home')">Taniti<span>•</span>Island</div>
   <div class="nav-links">
@@ -371,7 +367,7 @@ footer {
 
 <div id="toast"></div>
 
-<!-- ════════════════════ HOME ════════════════════ -->
+
 <div id="page-home" class="page active">
 
   <div class="hero">
@@ -391,7 +387,7 @@ footer {
     <div class="hero-waves"></div>
   </div>
 
-  <!-- Highlights strip -->
+  
   <div class="highlights">
     <div class="highlight-item">
       <div class="highlight-icon">🏖</div>
@@ -410,7 +406,7 @@ footer {
     </div>
   </div>
 
-  <!-- About intro -->
+  
   <div class="section">
     <div class="two-col">
       <div>
@@ -428,7 +424,7 @@ footer {
     </div>
   </div>
 
-  <!-- Featured activities -->
+  
   <div class="section" style="background:#f7f3eb;padding-top:72px;padding-bottom:72px;">
     <div class="section-eyebrow">Top Experiences</div>
     <h2 class="section-title">What Will You Explore?</h2>
@@ -463,7 +459,7 @@ footer {
     </div>
   </div>
 
-  <!-- CTA -->
+  
   <div class="cta-strip">
     <h2>Ready to Book Your Escape?</h2>
     <p>Browse our curated lodging options and start planning your perfect Tanitian getaway today.</p>
@@ -506,7 +502,7 @@ footer {
 
 </div>
 
-<!-- ════════════════════ ACTIVITIES ════════════════════ -->
+
 <div id="page-activities" class="page">
   <div class="page-hero">
     <div class="page-hero-eyebrow">Things To Do</div>
@@ -602,7 +598,7 @@ footer {
   </footer>
 </div>
 
-<!-- ════════════════════ LODGING ════════════════════ -->
+
 <div id="page-lodging" class="page">
   <div class="page-hero">
     <div class="page-hero-eyebrow">Where to Stay</div>
@@ -693,7 +689,7 @@ footer {
   </footer>
 </div>
 
-<!-- ════════════════════ DINING ════════════════════ -->
+
 <div id="page-dining" class="page">
   <div class="page-hero">
     <div class="page-hero-eyebrow">Food & Drink</div>
@@ -755,7 +751,7 @@ footer {
   </footer>
 </div>
 
-<!-- ════════════════════ GETTING HERE ════════════════════ -->
+
 <div id="page-getting" class="page">
   <div class="page-hero">
     <div class="page-hero-eyebrow">Travel Planning</div>
@@ -852,7 +848,7 @@ footer {
   </footer>
 </div>
 
-<!-- ════════════════════ ABOUT ════════════════════ -->
+
 <div id="page-about" class="page">
   <div class="page-hero">
     <div class="page-hero-eyebrow">The Island</div>
@@ -917,7 +913,7 @@ footer {
 </div>
 
 <script>
-// ── PAGE ROUTING ──
+
 const pages = ['home','activities','lodging','dining','getting','about'];
 
 function showPage(id) {
@@ -932,7 +928,7 @@ function showPage(id) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ── ACTIVITY FILTER ──
+
 function filterActs(btn, cat) {
   document.querySelectorAll('.activity-filter .filter-btn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
@@ -943,7 +939,7 @@ function filterActs(btn, cat) {
   });
 }
 
-// ── FAQ ACCORDION ──
+
 function toggleFaq(el) {
   const ans = el.nextElementSibling;
   const isOpen = ans.classList.contains('open');
@@ -951,7 +947,7 @@ function toggleFaq(el) {
   if (!isOpen) { ans.classList.add('open'); el.classList.add('open'); }
 }
 
-// ── TOAST ──
+
 function toast(msg) {
   const t = document.getElementById('toast');
   t.textContent = '✓ ' + msg;
@@ -959,7 +955,7 @@ function toast(msg) {
   setTimeout(() => t.classList.remove('show'), 3500);
 }
 
-// ── SEARCH ──
+
 document.getElementById('search-input').addEventListener('keydown', function(e) {
   if (e.key === 'Enter' && this.value.trim()) {
     const q = this.value.toLowerCase();
